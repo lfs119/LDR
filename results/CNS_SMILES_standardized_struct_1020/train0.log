@@ -1,0 +1,274 @@
+---2025-10-20 16:35:45.752494: start.---
+GPU [1,2,3] is available: True
+DDP is available: True
+
+---2025-10-20 16:35:51.523444: Loading data. ---
+load: /raid/home/xukai/FRATTVAE/results/CNS_SMILES_standardized_struct_1020/input_data/params.yml
+
+data: /raid/home/xukai/FRATTVAE/data/CNS_SMILES_standardized.csv
+train: 454497, valid: 24925, test: 25431, useChiral: False, n_jobs: 8
+fragments: 7245, feature: 39, tree: (32, 16), prop: None
+---2025-10-20 16:36:44.394903: Loading data done. (elapsed time: 00:00:00:52)---
+
+---2025-10-20 16:36:48.337160: Training start (valid: True).---
+epoch: 1000, batch_size: 2048, learning_rate: 0.0001, dropout: 0.1, save: 200, kl_w: 0.0005, l_w: 6.0, p_w: 1.0
+[001/1000] <train> total: 49.8789, unweighted: 87.4617, kl: 79.1551, label: 8.3066, prop: 0.0000, label_acc: 0.1264, label_pad_acc: 0.0627, elapsed time: 00:00:00:27
+[005/1000] <train> total: 37.5948, unweighted: 297.9554, kl: 291.7139, label: 6.2415, prop: 0.0000, label_acc: 0.2238, label_pad_acc: 0.1352, elapsed time: 00:00:00:27
+[010/1000] <train> total: 24.4924, unweighted: 430.4423, kl: 426.3958, label: 4.0465, prop: 0.0000, label_acc: 0.2787, label_pad_acc: 0.3963, elapsed time: 00:00:00:26
+[015/1000] <train> total: 15.3134, unweighted: 487.1468, kl: 484.6349, label: 2.5119, prop: 0.0000, label_acc: 0.3424, label_pad_acc: 0.4910, elapsed time: 00:00:00:27
+[020/1000] <train> total: 10.6472, unweighted: 507.4151, kl: 505.6828, label: 1.7324, prop: 0.0000, label_acc: 0.4116, label_pad_acc: 0.5654, elapsed time: 00:00:00:27
+[025/1000] <train> total: 8.3316, unweighted: 504.7202, kl: 503.3736, label: 1.3467, prop: 0.0000, label_acc: 0.4692, label_pad_acc: 0.6115, elapsed time: 00:00:00:27
+[030/1000] <train> total: 7.0832, unweighted: 500.7556, kl: 499.6167, label: 1.1389, prop: 0.0000, label_acc: 0.5105, label_pad_acc: 0.6466, elapsed time: 00:00:00:28
+[035/1000] <train> total: 6.1699, unweighted: 489.0215, kl: 488.0338, label: 0.9877, prop: 0.0000, label_acc: 0.5459, label_pad_acc: 0.6785, elapsed time: 00:00:00:30
+[040/1000] <train> total: 5.5284, unweighted: 481.2807, kl: 480.3994, label: 0.8814, prop: 0.0000, label_acc: 0.5720, label_pad_acc: 0.6968, elapsed time: 00:00:00:30
+[045/1000] <train> total: 5.0084, unweighted: 466.8703, kl: 466.0744, label: 0.7959, prop: 0.0000, label_acc: 0.5989, label_pad_acc: 0.7249, elapsed time: 00:00:00:28
+[050/1000] <train> total: 4.7184, unweighted: 461.0833, kl: 460.3352, label: 0.7480, prop: 0.0000, label_acc: 0.6143, label_pad_acc: 0.7340, elapsed time: 00:00:00:29
+[055/1000] <train> total: 4.5577, unweighted: 456.2019, kl: 455.4802, label: 0.7217, prop: 0.0000, label_acc: 0.6259, label_pad_acc: 0.7404, elapsed time: 00:00:00:29
+[060/1000] <train> total: 4.1285, unweighted: 444.6372, kl: 443.9861, label: 0.6511, prop: 0.0000, label_acc: 0.6445, label_pad_acc: 0.7575, elapsed time: 00:00:00:29
+[065/1000] <train> total: 3.9670, unweighted: 437.2652, kl: 436.6404, label: 0.6248, prop: 0.0000, label_acc: 0.6549, label_pad_acc: 0.7626, elapsed time: 00:00:00:29
+[070/1000] <train> total: 3.7073, unweighted: 429.6326, kl: 429.0505, label: 0.5821, prop: 0.0000, label_acc: 0.6682, label_pad_acc: 0.7702, elapsed time: 00:00:00:28
+[075/1000] <train> total: 3.5890, unweighted: 422.5890, kl: 422.0259, label: 0.5630, prop: 0.0000, label_acc: 0.6771, label_pad_acc: 0.7815, elapsed time: 00:00:00:29
+[080/1000] <train> total: 3.4497, unweighted: 414.4886, kl: 413.9481, label: 0.5405, prop: 0.0000, label_acc: 0.6851, label_pad_acc: 0.7863, elapsed time: 00:00:00:26
+[085/1000] <train> total: 3.4148, unweighted: 411.4198, kl: 410.8849, label: 0.5349, prop: 0.0000, label_acc: 0.6901, label_pad_acc: 0.7887, elapsed time: 00:00:00:26
+[090/1000] <train> total: 3.3512, unweighted: 408.0286, kl: 407.5040, label: 0.5246, prop: 0.0000, label_acc: 0.6943, label_pad_acc: 0.7919, elapsed time: 00:00:00:26
+[095/1000] <train> total: 3.2319, unweighted: 399.0946, kl: 398.5892, label: 0.5054, prop: 0.0000, label_acc: 0.7011, label_pad_acc: 0.7965, elapsed time: 00:00:00:26
+[100/1000] <train> total: 2.9924, unweighted: 384.2961, kl: 383.8293, label: 0.4667, prop: 0.0000, label_acc: 0.7124, label_pad_acc: 0.8089, elapsed time: 00:00:00:29
+[105/1000] <train> total: 2.9360, unweighted: 380.4713, kl: 380.0136, label: 0.4577, prop: 0.0000, label_acc: 0.7172, label_pad_acc: 0.8128, elapsed time: 00:00:00:30
+[110/1000] <train> total: 2.8501, unweighted: 373.7556, kl: 373.3117, label: 0.4439, prop: 0.0000, label_acc: 0.7229, label_pad_acc: 0.8196, elapsed time: 00:00:00:23
+[115/1000] <train> total: 2.8429, unweighted: 376.9306, kl: 376.4882, label: 0.4424, prop: 0.0000, label_acc: 0.7248, label_pad_acc: 0.8179, elapsed time: 00:00:00:22
+[120/1000] <train> total: 2.7683, unweighted: 366.9669, kl: 366.5360, label: 0.4308, prop: 0.0000, label_acc: 0.7304, label_pad_acc: 0.8233, elapsed time: 00:00:00:21
+[125/1000] <train> total: 2.9058, unweighted: 374.6523, kl: 374.1992, label: 0.4531, prop: 0.0000, label_acc: 0.7262, label_pad_acc: 0.8167, elapsed time: 00:00:00:21
+[130/1000] <train> total: 2.6735, unweighted: 358.1551, kl: 357.7393, label: 0.4158, prop: 0.0000, label_acc: 0.7374, label_pad_acc: 0.8260, elapsed time: 00:00:00:21
+[135/1000] <train> total: 2.6179, unweighted: 354.5594, kl: 354.1526, label: 0.4068, prop: 0.0000, label_acc: 0.7406, label_pad_acc: 0.8303, elapsed time: 00:00:00:22
+[140/1000] <train> total: 2.5470, unweighted: 346.0254, kl: 345.6297, label: 0.3957, prop: 0.0000, label_acc: 0.7449, label_pad_acc: 0.8351, elapsed time: 00:00:00:23
+[145/1000] <train> total: 2.5007, unweighted: 344.9893, kl: 344.6013, label: 0.3881, prop: 0.0000, label_acc: 0.7481, label_pad_acc: 0.8387, elapsed time: 00:00:00:26
+[150/1000] <train> total: 2.4904, unweighted: 338.8270, kl: 338.4402, label: 0.3869, prop: 0.0000, label_acc: 0.7501, label_pad_acc: 0.8385, elapsed time: 00:00:00:28
+[155/1000] <train> total: 2.3418, unweighted: 328.7898, kl: 328.4269, label: 0.3629, prop: 0.0000, label_acc: 0.7569, label_pad_acc: 0.8441, elapsed time: 00:00:00:26
+[160/1000] <train> total: 2.3077, unweighted: 321.2715, kl: 320.9137, label: 0.3579, prop: 0.0000, label_acc: 0.7598, label_pad_acc: 0.8462, elapsed time: 00:00:00:26
+[165/1000] <train> total: 2.2925, unweighted: 322.5096, kl: 322.1543, label: 0.3552, prop: 0.0000, label_acc: 0.7612, label_pad_acc: 0.8474, elapsed time: 00:00:00:26
+[170/1000] <train> total: 2.3879, unweighted: 326.1337, kl: 325.7628, label: 0.3708, prop: 0.0000, label_acc: 0.7593, label_pad_acc: 0.8436, elapsed time: 00:00:00:27
+model_iter167 saved. [total: 2.2576]
+[175/1000] <train> total: 2.2132, unweighted: 313.7709, kl: 313.4281, label: 0.3427, prop: 0.0000, label_acc: 0.7676, label_pad_acc: 0.8494, elapsed time: 00:00:00:26
+[180/1000] <train> total: 2.1566, unweighted: 307.1076, kl: 306.7737, label: 0.3339, prop: 0.0000, label_acc: 0.7705, label_pad_acc: 0.8537, elapsed time: 00:00:00:28
+[185/1000] <train> total: 2.1960, unweighted: 306.2020, kl: 305.8615, label: 0.3405, prop: 0.0000, label_acc: 0.7699, label_pad_acc: 0.8538, elapsed time: 00:00:00:28
+model_iter179 saved. [total: 2.1544]
+[190/1000] <train> total: 2.1818, unweighted: 305.2092, kl: 304.8710, label: 0.3382, prop: 0.0000, label_acc: 0.7715, label_pad_acc: 0.8529, elapsed time: 00:00:00:30
+[195/1000] <train> total: 2.1163, unweighted: 299.6090, kl: 299.2812, label: 0.3278, prop: 0.0000, label_acc: 0.7760, label_pad_acc: 0.8567, elapsed time: 00:00:00:29
+[200/1000] <valid> total: 41.1528, unweighted: 314.7396, kl: 307.9065, label: 6.8331, prop: 0.0000, label_acc: 0.7645, label_pad_acc: 0.8550, elapsed time: 00:00:00:29
+model_iter200 saved.
+[200/1000] <train> total: 2.0636, unweighted: 294.0490, kl: 293.7295, label: 0.3195, prop: 0.0000, label_acc: 0.7785, label_pad_acc: 0.8593, elapsed time: 00:00:00:30
+[205/1000] <train> total: 2.0211, unweighted: 288.1267, kl: 287.8138, label: 0.3129, prop: 0.0000, label_acc: 0.7820, label_pad_acc: 0.8624, elapsed time: 00:00:00:28
+[210/1000] <train> total: 1.9613, unweighted: 283.1271, kl: 282.8238, label: 0.3033, prop: 0.0000, label_acc: 0.7848, label_pad_acc: 0.8643, elapsed time: 00:00:00:28
+[215/1000] <train> total: 2.0050, unweighted: 285.0861, kl: 284.7757, label: 0.3104, prop: 0.0000, label_acc: 0.7832, label_pad_acc: 0.8604, elapsed time: 00:00:00:27
+model_iter211 saved. [total: 1.9548]
+[220/1000] <train> total: 1.9999, unweighted: 280.9760, kl: 280.6661, label: 0.3099, prop: 0.0000, label_acc: 0.7855, label_pad_acc: 0.8635, elapsed time: 00:00:00:27
+[225/1000] <train> total: 1.9345, unweighted: 276.2612, kl: 275.9617, label: 0.2994, prop: 0.0000, label_acc: 0.7890, label_pad_acc: 0.8671, elapsed time: 00:00:00:27
+[230/1000] <train> total: 1.9007, unweighted: 271.1490, kl: 270.8548, label: 0.2942, prop: 0.0000, label_acc: 0.7913, label_pad_acc: 0.8692, elapsed time: 00:00:00:25
+[235/1000] <train> total: 1.8969, unweighted: 270.1697, kl: 269.8761, label: 0.2937, prop: 0.0000, label_acc: 0.7919, label_pad_acc: 0.8686, elapsed time: 00:00:00:26
+[240/1000] <train> total: 1.8347, unweighted: 264.0455, kl: 263.7617, label: 0.2838, prop: 0.0000, label_acc: 0.7950, label_pad_acc: 0.8706, elapsed time: 00:00:00:26
+[245/1000] <train> total: 1.8846, unweighted: 264.5868, kl: 264.2947, label: 0.2921, prop: 0.0000, label_acc: 0.7938, label_pad_acc: 0.8698, elapsed time: 00:00:00:32
+[250/1000] <train> total: 1.8952, unweighted: 264.3852, kl: 264.0914, label: 0.2939, prop: 0.0000, label_acc: 0.7944, label_pad_acc: 0.8709, elapsed time: 00:00:00:31
+[255/1000] <train> total: 1.7860, unweighted: 257.9667, kl: 257.6906, label: 0.2762, prop: 0.0000, label_acc: 0.7991, label_pad_acc: 0.8750, elapsed time: 00:00:00:30
+[260/1000] <train> total: 1.7767, unweighted: 253.3622, kl: 253.0872, label: 0.2750, prop: 0.0000, label_acc: 0.8011, label_pad_acc: 0.8748, elapsed time: 00:00:00:33
+[265/1000] <train> total: 1.7429, unweighted: 248.6696, kl: 248.3998, label: 0.2698, prop: 0.0000, label_acc: 0.8029, label_pad_acc: 0.8763, elapsed time: 00:00:00:30
+[270/1000] <train> total: 1.7484, unweighted: 247.3905, kl: 247.1196, label: 0.2708, prop: 0.0000, label_acc: 0.8035, label_pad_acc: 0.8761, elapsed time: 00:00:00:31
+[275/1000] <train> total: 1.7728, unweighted: 247.3175, kl: 247.0426, label: 0.2749, prop: 0.0000, label_acc: 0.8042, label_pad_acc: 0.8776, elapsed time: 00:00:00:30
+[280/1000] <train> total: 1.6952, unweighted: 240.5788, kl: 240.3163, label: 0.2625, prop: 0.0000, label_acc: 0.8067, label_pad_acc: 0.8795, elapsed time: 00:00:00:30
+[285/1000] <train> total: 1.6707, unweighted: 235.3569, kl: 235.0980, label: 0.2589, prop: 0.0000, label_acc: 0.8087, label_pad_acc: 0.8821, elapsed time: 00:00:00:31
+[290/1000] <train> total: 1.7102, unweighted: 240.1781, kl: 239.9131, label: 0.2650, prop: 0.0000, label_acc: 0.8076, label_pad_acc: 0.8798, elapsed time: 00:00:00:29
+[295/1000] <train> total: 1.6308, unweighted: 231.6155, kl: 231.3630, label: 0.2525, prop: 0.0000, label_acc: 0.8118, label_pad_acc: 0.8823, elapsed time: 00:00:00:30
+[300/1000] <train> total: 1.6197, unweighted: 230.4661, kl: 230.2153, label: 0.2508, prop: 0.0000, label_acc: 0.8130, label_pad_acc: 0.8840, elapsed time: 00:00:00:30
+[305/1000] <train> total: 1.6091, unweighted: 227.6347, kl: 227.3855, label: 0.2492, prop: 0.0000, label_acc: 0.8140, label_pad_acc: 0.8851, elapsed time: 00:00:00:29
+[310/1000] <train> total: 1.6222, unweighted: 228.1937, kl: 227.9423, label: 0.2514, prop: 0.0000, label_acc: 0.8141, label_pad_acc: 0.8838, elapsed time: 00:00:00:28
+model_iter304 saved. [total: 1.6023]
+[315/1000] <train> total: 1.6123, unweighted: 229.6747, kl: 229.4251, label: 0.2496, prop: 0.0000, label_acc: 0.8137, label_pad_acc: 0.8830, elapsed time: 00:00:00:28
+model_iter312 saved. [total: 1.5748]
+[320/1000] <train> total: 1.5823, unweighted: 221.9158, kl: 221.6706, label: 0.2452, prop: 0.0000, label_acc: 0.8165, label_pad_acc: 0.8871, elapsed time: 00:00:00:29
+[325/1000] <train> total: 1.5846, unweighted: 223.2045, kl: 222.9590, label: 0.2455, prop: 0.0000, label_acc: 0.8173, label_pad_acc: 0.8865, elapsed time: 00:00:00:29
+[330/1000] <train> total: 1.5570, unweighted: 218.2968, kl: 218.0554, label: 0.2413, prop: 0.0000, label_acc: 0.8195, label_pad_acc: 0.8882, elapsed time: 00:00:00:29
+model_iter327 saved. [total: 1.5419]
+[335/1000] <train> total: 1.5217, unweighted: 216.0016, kl: 215.7659, label: 0.2356, prop: 0.0000, label_acc: 0.8211, label_pad_acc: 0.8896, elapsed time: 00:00:00:29
+[340/1000] <train> total: 1.5025, unweighted: 210.6768, kl: 210.4439, label: 0.2329, prop: 0.0000, label_acc: 0.8226, label_pad_acc: 0.8901, elapsed time: 00:00:00:28
+[345/1000] <train> total: 1.4757, unweighted: 208.5166, kl: 208.2880, label: 0.2286, prop: 0.0000, label_acc: 0.8242, label_pad_acc: 0.8906, elapsed time: 00:00:00:28
+[350/1000] <train> total: 1.5782, unweighted: 219.2626, kl: 219.0178, label: 0.2448, prop: 0.0000, label_acc: 0.8211, label_pad_acc: 0.8863, elapsed time: 00:00:00:28
+model_iter345 saved. [total: 1.4757]
+[355/1000] <train> total: 1.5375, unweighted: 211.5583, kl: 211.3197, label: 0.2386, prop: 0.0000, label_acc: 0.8232, label_pad_acc: 0.8906, elapsed time: 00:00:00:28
+[360/1000] <train> total: 1.4500, unweighted: 205.4450, kl: 205.2204, label: 0.2246, prop: 0.0000, label_acc: 0.8272, label_pad_acc: 0.8933, elapsed time: 00:00:00:29
+[365/1000] <train> total: 1.4464, unweighted: 203.2917, kl: 203.0676, label: 0.2242, prop: 0.0000, label_acc: 0.8278, label_pad_acc: 0.8933, elapsed time: 00:00:00:30
+[370/1000] <train> total: 1.4334, unweighted: 200.9779, kl: 200.7557, label: 0.2222, prop: 0.0000, label_acc: 0.8291, label_pad_acc: 0.8941, elapsed time: 00:00:00:31
+[375/1000] <train> total: 1.4503, unweighted: 202.7201, kl: 202.4953, label: 0.2248, prop: 0.0000, label_acc: 0.8287, label_pad_acc: 0.8945, elapsed time: 00:00:00:31
+model_iter369 saved. [total: 1.4242]
+[380/1000] <train> total: 1.4090, unweighted: 199.5832, kl: 199.3650, label: 0.2182, prop: 0.0000, label_acc: 0.8311, label_pad_acc: 0.8958, elapsed time: 00:00:00:29
+[385/1000] <train> total: 1.3919, unweighted: 195.7839, kl: 195.5682, label: 0.2157, prop: 0.0000, label_acc: 0.8327, label_pad_acc: 0.8964, elapsed time: 00:00:00:31
+[390/1000] <train> total: 1.3935, unweighted: 195.4149, kl: 195.1989, label: 0.2160, prop: 0.0000, label_acc: 0.8327, label_pad_acc: 0.8967, elapsed time: 00:00:00:29
+model_iter385 saved. [total: 1.3919]
+[395/1000] <train> total: 1.3699, unweighted: 192.7446, kl: 192.5324, label: 0.2123, prop: 0.0000, label_acc: 0.8341, label_pad_acc: 0.8979, elapsed time: 00:00:00:29
+[400/1000] <valid> total: 40.7238, unweighted: 204.2223, kl: 197.4514, label: 6.7708, prop: 0.0000, label_acc: 0.8067, label_pad_acc: 0.8862, elapsed time: 00:00:00:33
+model_iter400 saved.
+[400/1000] <train> total: 1.3653, unweighted: 191.8048, kl: 191.5932, label: 0.2116, prop: 0.0000, label_acc: 0.8347, label_pad_acc: 0.8981, elapsed time: 00:00:00:33
+[405/1000] <train> total: 1.3726, unweighted: 191.5366, kl: 191.3238, label: 0.2128, prop: 0.0000, label_acc: 0.8359, label_pad_acc: 0.8978, elapsed time: 00:00:00:32
+[410/1000] <train> total: 1.3499, unweighted: 188.5081, kl: 188.2988, label: 0.2093, prop: 0.0000, label_acc: 0.8368, label_pad_acc: 0.8997, elapsed time: 00:00:00:32
+[415/1000] <train> total: 1.3476, unweighted: 189.1875, kl: 188.9787, label: 0.2089, prop: 0.0000, label_acc: 0.8375, label_pad_acc: 0.8996, elapsed time: 00:00:00:33
+[420/1000] <train> total: 1.3556, unweighted: 188.8544, kl: 188.6442, label: 0.2102, prop: 0.0000, label_acc: 0.8375, label_pad_acc: 0.9002, elapsed time: 00:00:00:32
+model_iter418 saved. [total: 1.3312]
+[425/1000] <train> total: 1.3612, unweighted: 188.3878, kl: 188.1766, label: 0.2112, prop: 0.0000, label_acc: 0.8382, label_pad_acc: 0.9005, elapsed time: 00:00:00:32
+[430/1000] <train> total: 1.3356, unweighted: 187.8255, kl: 187.6185, label: 0.2070, prop: 0.0000, label_acc: 0.8388, label_pad_acc: 0.9001, elapsed time: 00:00:00:32
+[435/1000] <train> total: 1.3041, unweighted: 182.8362, kl: 182.6340, label: 0.2021, prop: 0.0000, label_acc: 0.8412, label_pad_acc: 0.9025, elapsed time: 00:00:00:32
+[440/1000] <train> total: 1.3119, unweighted: 182.8175, kl: 182.6141, label: 0.2034, prop: 0.0000, label_acc: 0.8413, label_pad_acc: 0.9016, elapsed time: 00:00:00:33
+[445/1000] <train> total: 1.2852, unweighted: 180.5857, kl: 180.3865, label: 0.1992, prop: 0.0000, label_acc: 0.8432, label_pad_acc: 0.9035, elapsed time: 00:00:00:31
+[450/1000] <train> total: 1.2663, unweighted: 178.6708, kl: 178.4746, label: 0.1962, prop: 0.0000, label_acc: 0.8439, label_pad_acc: 0.9045, elapsed time: 00:00:00:26
+[455/1000] <train> total: 1.3028, unweighted: 182.2557, kl: 182.0538, label: 0.2020, prop: 0.0000, label_acc: 0.8427, label_pad_acc: 0.9017, elapsed time: 00:00:00:26
+model_iter452 saved. [total: 1.2629]
+[460/1000] <train> total: 1.3149, unweighted: 182.8064, kl: 182.6025, label: 0.2039, prop: 0.0000, label_acc: 0.8418, label_pad_acc: 0.9010, elapsed time: 00:00:00:26
+model_iter452 saved. [total: 1.2629]
+[465/1000] <train> total: 1.3276, unweighted: 184.7748, kl: 184.5689, label: 0.2059, prop: 0.0000, label_acc: 0.8427, label_pad_acc: 0.9018, elapsed time: 00:00:00:28
+[470/1000] <train> total: 1.2575, unweighted: 177.9157, kl: 177.7210, label: 0.1948, prop: 0.0000, label_acc: 0.8462, label_pad_acc: 0.9049, elapsed time: 00:00:00:28
+[475/1000] <train> total: 1.2720, unweighted: 176.9896, kl: 176.7923, label: 0.1973, prop: 0.0000, label_acc: 0.8462, label_pad_acc: 0.9052, elapsed time: 00:00:00:27
+model_iter470 saved. [total: 1.2575]
+[480/1000] <train> total: 1.2288, unweighted: 174.7489, kl: 174.5587, label: 0.1903, prop: 0.0000, label_acc: 0.8484, label_pad_acc: 0.9070, elapsed time: 00:00:00:30
+[485/1000] <train> total: 1.2333, unweighted: 173.2572, kl: 173.0660, label: 0.1911, prop: 0.0000, label_acc: 0.8491, label_pad_acc: 0.9062, elapsed time: 00:00:00:28
+[490/1000] <train> total: 1.2104, unweighted: 172.1726, kl: 171.9852, label: 0.1874, prop: 0.0000, label_acc: 0.8501, label_pad_acc: 0.9076, elapsed time: 00:00:00:28
+[495/1000] <train> total: 1.2049, unweighted: 171.4492, kl: 171.2627, label: 0.1865, prop: 0.0000, label_acc: 0.8506, label_pad_acc: 0.9075, elapsed time: 00:00:00:28
+[500/1000] <train> total: 1.1953, unweighted: 170.3197, kl: 170.1347, label: 0.1850, prop: 0.0000, label_acc: 0.8516, label_pad_acc: 0.9089, elapsed time: 00:00:00:28
+[505/1000] <train> total: 1.2155, unweighted: 172.4284, kl: 172.2401, label: 0.1882, prop: 0.0000, label_acc: 0.8506, label_pad_acc: 0.9078, elapsed time: 00:00:00:27
+model_iter500 saved. [total: 1.1953]
+[510/1000] <train> total: 1.1850, unweighted: 168.3461, kl: 168.1626, label: 0.1835, prop: 0.0000, label_acc: 0.8526, label_pad_acc: 0.9096, elapsed time: 00:00:00:27
+[515/1000] <train> total: 1.1776, unweighted: 167.0218, kl: 166.8394, label: 0.1824, prop: 0.0000, label_acc: 0.8536, label_pad_acc: 0.9097, elapsed time: 00:00:00:28
+[520/1000] <train> total: 1.1703, unweighted: 166.5322, kl: 166.3510, label: 0.1812, prop: 0.0000, label_acc: 0.8541, label_pad_acc: 0.9104, elapsed time: 00:00:00:27
+[525/1000] <train> total: 1.1639, unweighted: 165.5006, kl: 165.3204, label: 0.1802, prop: 0.0000, label_acc: 0.8549, label_pad_acc: 0.9108, elapsed time: 00:00:00:27
+[530/1000] <train> total: 1.1604, unweighted: 164.8694, kl: 164.6897, label: 0.1797, prop: 0.0000, label_acc: 0.8558, label_pad_acc: 0.9115, elapsed time: 00:00:00:27
+model_iter528 saved. [total: 1.1508]
+[535/1000] <train> total: 1.1501, unweighted: 164.2119, kl: 164.0339, label: 0.1780, prop: 0.0000, label_acc: 0.8559, label_pad_acc: 0.9103, elapsed time: 00:00:00:27
+[540/1000] <train> total: 1.1484, unweighted: 164.1454, kl: 163.9676, label: 0.1777, prop: 0.0000, label_acc: 0.8566, label_pad_acc: 0.9120, elapsed time: 00:00:00:27
+[545/1000] <train> total: 1.1602, unweighted: 165.1106, kl: 164.9310, label: 0.1796, prop: 0.0000, label_acc: 0.8568, label_pad_acc: 0.9112, elapsed time: 00:00:00:28
+[550/1000] <train> total: 1.1641, unweighted: 163.6935, kl: 163.5131, label: 0.1804, prop: 0.0000, label_acc: 0.8568, label_pad_acc: 0.9114, elapsed time: 00:00:00:29
+[555/1000] <train> total: 1.1441, unweighted: 162.9264, kl: 162.7493, label: 0.1771, prop: 0.0000, label_acc: 0.8584, label_pad_acc: 0.9127, elapsed time: 00:00:00:29
+model_iter549 saved. [total: 1.1303]
+[560/1000] <train> total: 1.1216, unweighted: 161.4410, kl: 161.2675, label: 0.1735, prop: 0.0000, label_acc: 0.8594, label_pad_acc: 0.9133, elapsed time: 00:00:00:28
+[565/1000] <train> total: 1.1244, unweighted: 162.2136, kl: 162.0397, label: 0.1739, prop: 0.0000, label_acc: 0.8594, label_pad_acc: 0.9132, elapsed time: 00:00:00:30
+model_iter562 saved. [total: 1.1135]
+[570/1000] <train> total: 1.1076, unweighted: 159.9754, kl: 159.8041, label: 0.1713, prop: 0.0000, label_acc: 0.8605, label_pad_acc: 0.9140, elapsed time: 00:00:00:28
+[575/1000] <train> total: 1.1005, unweighted: 158.9853, kl: 158.8151, label: 0.1702, prop: 0.0000, label_acc: 0.8614, label_pad_acc: 0.9144, elapsed time: 00:00:00:28
+[580/1000] <train> total: 1.0913, unweighted: 157.7084, kl: 157.5396, label: 0.1688, prop: 0.0000, label_acc: 0.8623, label_pad_acc: 0.9149, elapsed time: 00:00:00:29
+[585/1000] <train> total: 1.0904, unweighted: 157.9586, kl: 157.7900, label: 0.1686, prop: 0.0000, label_acc: 0.8627, label_pad_acc: 0.9152, elapsed time: 00:00:00:29
+[590/1000] <train> total: 1.1823, unweighted: 164.5191, kl: 164.3357, label: 0.1834, prop: 0.0000, label_acc: 0.8582, label_pad_acc: 0.9114, elapsed time: 00:00:00:30
+model_iter587 saved. [total: 1.0850]
+[595/1000] <train> total: 1.1797, unweighted: 166.9474, kl: 166.7646, label: 0.1827, prop: 0.0000, label_acc: 0.8574, label_pad_acc: 0.9110, elapsed time: 00:00:00:29
+model_iter587 saved. [total: 1.0850]
+[600/1000] <valid> total: 43.2968, unweighted: 170.6179, kl: 163.4154, label: 7.2025, prop: 0.0000, label_acc: 0.8221, label_pad_acc: 0.8958, elapsed time: 00:00:00:30
+model_iter600 saved.
+[600/1000] <train> total: 1.0781, unweighted: 157.0645, kl: 156.8979, label: 0.1666, prop: 0.0000, label_acc: 0.8642, label_pad_acc: 0.9165, elapsed time: 00:00:00:30
+[605/1000] <train> total: 1.0704, unweighted: 155.9150, kl: 155.7496, label: 0.1654, prop: 0.0000, label_acc: 0.8646, label_pad_acc: 0.9170, elapsed time: 00:00:00:30
+[610/1000] <train> total: 1.0613, unweighted: 154.6603, kl: 154.4963, label: 0.1640, prop: 0.0000, label_acc: 0.8658, label_pad_acc: 0.9175, elapsed time: 00:00:00:31
+[615/1000] <train> total: 1.0696, unweighted: 155.8020, kl: 155.6367, label: 0.1653, prop: 0.0000, label_acc: 0.8652, label_pad_acc: 0.9170, elapsed time: 00:00:00:27
+model_iter610 saved. [total: 1.0613]
+[620/1000] <train> total: 1.0720, unweighted: 155.7634, kl: 155.5977, label: 0.1657, prop: 0.0000, label_acc: 0.8661, label_pad_acc: 0.9171, elapsed time: 00:00:00:25
+[625/1000] <train> total: 1.0475, unweighted: 154.2669, kl: 154.1051, label: 0.1617, prop: 0.0000, label_acc: 0.8674, label_pad_acc: 0.9181, elapsed time: 00:00:00:27
+[630/1000] <train> total: 1.0465, unweighted: 153.4670, kl: 153.3054, label: 0.1616, prop: 0.0000, label_acc: 0.8674, label_pad_acc: 0.9187, elapsed time: 00:00:00:25
+[635/1000] <train> total: 1.0397, unweighted: 152.4202, kl: 152.2596, label: 0.1606, prop: 0.0000, label_acc: 0.8686, label_pad_acc: 0.9189, elapsed time: 00:00:00:25
+[640/1000] <train> total: 1.0384, unweighted: 152.1385, kl: 151.9781, label: 0.1604, prop: 0.0000, label_acc: 0.8688, label_pad_acc: 0.9193, elapsed time: 00:00:00:26
+[645/1000] <train> total: 1.0446, unweighted: 152.0041, kl: 151.8426, label: 0.1614, prop: 0.0000, label_acc: 0.8690, label_pad_acc: 0.9194, elapsed time: 00:00:00:25
+model_iter642 saved. [total: 1.0316]
+[650/1000] <train> total: 1.0576, unweighted: 153.5210, kl: 153.3575, label: 0.1635, prop: 0.0000, label_acc: 0.8686, label_pad_acc: 0.9184, elapsed time: 00:00:00:35
+model_iter642 saved. [total: 1.0316]
+[655/1000] <train> total: 1.0445, unweighted: 154.3579, kl: 154.1966, label: 0.1612, prop: 0.0000, label_acc: 0.8691, label_pad_acc: 0.9193, elapsed time: 00:00:00:33
+[660/1000] <train> total: 1.0888, unweighted: 157.1094, kl: 156.9410, label: 0.1684, prop: 0.0000, label_acc: 0.8669, label_pad_acc: 0.9168, elapsed time: 00:00:00:35
+model_iter642 saved. [total: 1.0316]
+[665/1000] <train> total: 1.0220, unweighted: 151.6535, kl: 151.4958, label: 0.1577, prop: 0.0000, label_acc: 0.8713, label_pad_acc: 0.9208, elapsed time: 00:00:00:35
+[670/1000] <train> total: 1.0085, unweighted: 149.8892, kl: 149.7336, label: 0.1556, prop: 0.0000, label_acc: 0.8721, label_pad_acc: 0.9210, elapsed time: 00:00:00:33
+[675/1000] <train> total: 1.0102, unweighted: 149.6818, kl: 149.5259, label: 0.1559, prop: 0.0000, label_acc: 0.8724, label_pad_acc: 0.9217, elapsed time: 00:00:00:34
+[680/1000] <train> total: 0.9984, unweighted: 148.5279, kl: 148.3739, label: 0.1540, prop: 0.0000, label_acc: 0.8731, label_pad_acc: 0.9222, elapsed time: 00:00:00:33
+[685/1000] <train> total: 0.9941, unweighted: 148.3350, kl: 148.1816, label: 0.1533, prop: 0.0000, label_acc: 0.8736, label_pad_acc: 0.9219, elapsed time: 00:00:00:35
+model_iter683 saved. [total: 0.9910]
+[690/1000] <train> total: 0.9993, unweighted: 149.3146, kl: 149.1605, label: 0.1541, prop: 0.0000, label_acc: 0.8736, label_pad_acc: 0.9213, elapsed time: 00:00:00:33
+[695/1000] <train> total: 0.9878, unweighted: 147.4826, kl: 147.3302, label: 0.1524, prop: 0.0000, label_acc: 0.8748, label_pad_acc: 0.9227, elapsed time: 00:00:00:33
+model_iter692 saved. [total: 0.9838]
+[700/1000] <train> total: 0.9853, unweighted: 147.0521, kl: 146.9002, label: 0.1520, prop: 0.0000, label_acc: 0.8749, label_pad_acc: 0.9231, elapsed time: 00:00:00:34
+[705/1000] <train> total: 0.9965, unweighted: 149.0483, kl: 148.8947, label: 0.1537, prop: 0.0000, label_acc: 0.8743, label_pad_acc: 0.9224, elapsed time: 00:00:00:32
+[710/1000] <train> total: 0.9765, unweighted: 147.0946, kl: 146.9440, label: 0.1505, prop: 0.0000, label_acc: 0.8758, label_pad_acc: 0.9238, elapsed time: 00:00:00:32
+[715/1000] <train> total: 1.0523, unweighted: 154.2952, kl: 154.1327, label: 0.1625, prop: 0.0000, label_acc: 0.8722, label_pad_acc: 0.9204, elapsed time: 00:00:00:32
+model_iter710 saved. [total: 0.9765]
+[720/1000] <train> total: 1.0460, unweighted: 151.8732, kl: 151.7116, label: 0.1617, prop: 0.0000, label_acc: 0.8729, label_pad_acc: 0.9210, elapsed time: 00:00:00:32
+model_iter710 saved. [total: 0.9765]
+[725/1000] <train> total: 0.9724, unweighted: 147.1103, kl: 146.9605, label: 0.1498, prop: 0.0000, label_acc: 0.8771, label_pad_acc: 0.9241, elapsed time: 00:00:00:32
+[730/1000] <train> total: 0.9590, unweighted: 145.7535, kl: 145.6058, label: 0.1477, prop: 0.0000, label_acc: 0.8781, label_pad_acc: 0.9241, elapsed time: 00:00:00:32
+[735/1000] <train> total: 0.9565, unweighted: 145.3313, kl: 145.1840, label: 0.1473, prop: 0.0000, label_acc: 0.8783, label_pad_acc: 0.9254, elapsed time: 00:00:00:33
+[740/1000] <train> total: 0.9509, unweighted: 145.1167, kl: 144.9702, label: 0.1464, prop: 0.0000, label_acc: 0.8788, label_pad_acc: 0.9256, elapsed time: 00:00:00:33
+[745/1000] <train> total: 0.9426, unweighted: 144.6662, kl: 144.5212, label: 0.1451, prop: 0.0000, label_acc: 0.8793, label_pad_acc: 0.9255, elapsed time: 00:00:00:33
+[750/1000] <train> total: 1.0517, unweighted: 151.5071, kl: 151.3444, label: 0.1627, prop: 0.0000, label_acc: 0.8739, label_pad_acc: 0.9214, elapsed time: 00:00:00:34
+model_iter745 saved. [total: 0.9426]
+[755/1000] <train> total: 0.9539, unweighted: 146.1809, kl: 146.0341, label: 0.1468, prop: 0.0000, label_acc: 0.8790, label_pad_acc: 0.9253, elapsed time: 00:00:00:32
+model_iter745 saved. [total: 0.9426]
+[760/1000] <train> total: 0.9359, unweighted: 143.7539, kl: 143.6099, label: 0.1440, prop: 0.0000, label_acc: 0.8807, label_pad_acc: 0.9263, elapsed time: 00:00:00:33
+[765/1000] <train> total: 0.9328, unweighted: 143.6210, kl: 143.4774, label: 0.1435, prop: 0.0000, label_acc: 0.8812, label_pad_acc: 0.9261, elapsed time: 00:00:00:33
+[770/1000] <train> total: 0.9348, unweighted: 144.1879, kl: 144.0441, label: 0.1438, prop: 0.0000, label_acc: 0.8813, label_pad_acc: 0.9263, elapsed time: 00:00:00:33
+model_iter768 saved. [total: 0.9277]
+[775/1000] <train> total: 0.9379, unweighted: 143.8102, kl: 143.6659, label: 0.1443, prop: 0.0000, label_acc: 0.8813, label_pad_acc: 0.9259, elapsed time: 00:00:00:34
+[780/1000] <train> total: 0.9241, unweighted: 142.8717, kl: 142.7296, label: 0.1421, prop: 0.0000, label_acc: 0.8827, label_pad_acc: 0.9276, elapsed time: 00:00:00:33
+[785/1000] <train> total: 0.9181, unweighted: 142.1025, kl: 141.9613, label: 0.1412, prop: 0.0000, label_acc: 0.8832, label_pad_acc: 0.9278, elapsed time: 00:00:00:34
+[790/1000] <train> total: 0.9121, unweighted: 141.9039, kl: 141.7637, label: 0.1402, prop: 0.0000, label_acc: 0.8835, label_pad_acc: 0.9289, elapsed time: 00:00:00:32
+[795/1000] <train> total: 0.9110, unweighted: 141.4402, kl: 141.3001, label: 0.1401, prop: 0.0000, label_acc: 0.8840, label_pad_acc: 0.9288, elapsed time: 00:00:00:32
+[800/1000] <valid> total: 44.7094, unweighted: 151.6424, kl: 144.2028, label: 7.4396, prop: 0.0000, label_acc: 0.8308, label_pad_acc: 0.9033, elapsed time: 00:00:00:34
+model_iter800 saved.
+[800/1000] <train> total: 0.9102, unweighted: 141.9709, kl: 141.8310, label: 0.1399, prop: 0.0000, label_acc: 0.8844, label_pad_acc: 0.9278, elapsed time: 00:00:00:34
+[805/1000] <train> total: 0.9032, unweighted: 141.0430, kl: 140.9042, label: 0.1388, prop: 0.0000, label_acc: 0.8851, label_pad_acc: 0.9281, elapsed time: 00:00:00:34
+[810/1000] <train> total: 0.9038, unweighted: 140.8268, kl: 140.6879, label: 0.1389, prop: 0.0000, label_acc: 0.8852, label_pad_acc: 0.9290, elapsed time: 00:00:00:33
+[815/1000] <train> total: 0.9358, unweighted: 143.1301, kl: 142.9860, label: 0.1440, prop: 0.0000, label_acc: 0.8836, label_pad_acc: 0.9281, elapsed time: 00:00:00:32
+[820/1000] <train> total: 0.9096, unweighted: 141.3439, kl: 141.2041, label: 0.1398, prop: 0.0000, label_acc: 0.8857, label_pad_acc: 0.9295, elapsed time: 00:00:00:29
+model_iter814 saved. [total: 0.8954]
+[825/1000] <train> total: 0.9433, unweighted: 145.9369, kl: 145.7919, label: 0.1451, prop: 0.0000, label_acc: 0.8834, label_pad_acc: 0.9262, elapsed time: 00:00:00:29
+model_iter814 saved. [total: 0.8954]
+[830/1000] <train> total: 0.8934, unweighted: 140.8414, kl: 140.7042, label: 0.1372, prop: 0.0000, label_acc: 0.8866, label_pad_acc: 0.9293, elapsed time: 00:00:00:30
+[835/1000] <train> total: 0.8900, unweighted: 140.3041, kl: 140.1675, label: 0.1366, prop: 0.0000, label_acc: 0.8874, label_pad_acc: 0.9309, elapsed time: 00:00:00:29
+[840/1000] <train> total: 0.9757, unweighted: 145.0226, kl: 144.8721, label: 0.1505, prop: 0.0000, label_acc: 0.8835, label_pad_acc: 0.9275, elapsed time: 00:00:00:32
+model_iter838 saved. [total: 0.8816]
+[845/1000] <train> total: 1.0195, unweighted: 152.6897, kl: 152.5325, label: 0.1572, prop: 0.0000, label_acc: 0.8789, label_pad_acc: 0.9237, elapsed time: 00:00:00:31
+[850/1000] <train> total: 0.9566, unweighted: 147.1119, kl: 146.9647, label: 0.1472, prop: 0.0000, label_acc: 0.8838, label_pad_acc: 0.9273, elapsed time: 00:00:00:31
+model_iter838 saved. [total: 0.8816]
+[855/1000] <train> total: 0.8806, unweighted: 140.1817, kl: 140.0466, label: 0.1351, prop: 0.0000, label_acc: 0.8880, label_pad_acc: 0.9312, elapsed time: 00:00:00:31
+[860/1000] <train> total: 0.8840, unweighted: 140.7628, kl: 140.6272, label: 0.1356, prop: 0.0000, label_acc: 0.8879, label_pad_acc: 0.9306, elapsed time: 00:00:00:33
+[865/1000] <train> total: 0.8669, unweighted: 138.3890, kl: 138.2561, label: 0.1330, prop: 0.0000, label_acc: 0.8896, label_pad_acc: 0.9315, elapsed time: 00:00:00:32
+[870/1000] <train> total: 0.9032, unweighted: 142.9306, kl: 142.7920, label: 0.1386, prop: 0.0000, label_acc: 0.8872, label_pad_acc: 0.9302, elapsed time: 00:00:00:32
+model_iter867 saved. [total: 0.8658]
+[875/1000] <train> total: 0.8643, unweighted: 138.6700, kl: 138.5375, label: 0.1325, prop: 0.0000, label_acc: 0.8901, label_pad_acc: 0.9324, elapsed time: 00:00:00:32
+[880/1000] <train> total: 0.8620, unweighted: 138.1987, kl: 138.0665, label: 0.1322, prop: 0.0000, label_acc: 0.8905, label_pad_acc: 0.9319, elapsed time: 00:00:00:33
+model_iter874 saved. [total: 0.8610]
+[885/1000] <train> total: 0.8641, unweighted: 138.3803, kl: 138.2478, label: 0.1325, prop: 0.0000, label_acc: 0.8909, label_pad_acc: 0.9328, elapsed time: 00:00:00:33
+model_iter874 saved. [total: 0.8610]
+[890/1000] <train> total: 0.8935, unweighted: 141.7809, kl: 141.6438, label: 0.1371, prop: 0.0000, label_acc: 0.8886, label_pad_acc: 0.9307, elapsed time: 00:00:00:34
+[895/1000] <train> total: 0.8520, unweighted: 137.8626, kl: 137.7321, label: 0.1305, prop: 0.0000, label_acc: 0.8915, label_pad_acc: 0.9330, elapsed time: 00:00:00:33
+[900/1000] <train> total: 0.8457, unweighted: 137.0208, kl: 136.8913, label: 0.1295, prop: 0.0000, label_acc: 0.8921, label_pad_acc: 0.9332, elapsed time: 00:00:00:33
+[905/1000] <train> total: 0.8669, unweighted: 137.7504, kl: 137.6174, label: 0.1330, prop: 0.0000, label_acc: 0.8913, label_pad_acc: 0.9330, elapsed time: 00:00:00:34
+model_iter902 saved. [total: 0.8435]
+[910/1000] <train> total: 0.9020, unweighted: 141.1144, kl: 140.9759, label: 0.1386, prop: 0.0000, label_acc: 0.8903, label_pad_acc: 0.9322, elapsed time: 00:00:00:31
+model_iter902 saved. [total: 0.8435]
+[915/1000] <train> total: 0.8508, unweighted: 137.4520, kl: 137.3216, label: 0.1304, prop: 0.0000, label_acc: 0.8926, label_pad_acc: 0.9341, elapsed time: 00:00:00:33
+[920/1000] <train> total: 0.8405, unweighted: 137.0659, kl: 136.9372, label: 0.1287, prop: 0.0000, label_acc: 0.8934, label_pad_acc: 0.9338, elapsed time: 00:00:00:33
+[925/1000] <train> total: 0.8365, unweighted: 136.2596, kl: 136.1315, label: 0.1281, prop: 0.0000, label_acc: 0.8940, label_pad_acc: 0.9346, elapsed time: 00:00:00:32
+model_iter923 saved. [total: 0.8315]
+[930/1000] <train> total: 0.8313, unweighted: 136.0765, kl: 135.9493, label: 0.1272, prop: 0.0000, label_acc: 0.8942, label_pad_acc: 0.9347, elapsed time: 00:00:00:32
+[935/1000] <train> total: 0.8282, unweighted: 135.6067, kl: 135.4799, label: 0.1267, prop: 0.0000, label_acc: 0.8948, label_pad_acc: 0.9350, elapsed time: 00:00:00:32
+[940/1000] <train> total: 0.8266, unweighted: 135.4032, kl: 135.2767, label: 0.1265, prop: 0.0000, label_acc: 0.8953, label_pad_acc: 0.9355, elapsed time: 00:00:00:30
+[945/1000] <train> total: 0.8931, unweighted: 140.5323, kl: 140.3952, label: 0.1372, prop: 0.0000, label_acc: 0.8924, label_pad_acc: 0.9338, elapsed time: 00:00:00:30
+model_iter941 saved. [total: 0.8219]
+[950/1000] <train> total: 0.8509, unweighted: 137.9985, kl: 137.8682, label: 0.1303, prop: 0.0000, label_acc: 0.8943, label_pad_acc: 0.9340, elapsed time: 00:00:00:30
+model_iter941 saved. [total: 0.8219]
+[955/1000] <train> total: 0.8294, unweighted: 137.7314, kl: 137.6046, label: 0.1268, prop: 0.0000, label_acc: 0.8951, label_pad_acc: 0.9341, elapsed time: 00:00:00:31
+[960/1000] <train> total: 0.8226, unweighted: 136.4641, kl: 136.3383, label: 0.1257, prop: 0.0000, label_acc: 0.8958, label_pad_acc: 0.9351, elapsed time: 00:00:00:30
+[965/1000] <train> total: 0.8133, unweighted: 134.7433, kl: 134.6189, label: 0.1243, prop: 0.0000, label_acc: 0.8971, label_pad_acc: 0.9368, elapsed time: 00:00:00:28
+[970/1000] <train> total: 0.8105, unweighted: 134.7974, kl: 134.6735, label: 0.1239, prop: 0.0000, label_acc: 0.8973, label_pad_acc: 0.9362, elapsed time: 00:00:00:27
+[975/1000] <train> total: 0.8086, unweighted: 134.4566, kl: 134.3331, label: 0.1236, prop: 0.0000, label_acc: 0.8974, label_pad_acc: 0.9368, elapsed time: 00:00:00:31
+model_iter971 saved. [total: 0.8050]
+[980/1000] <train> total: 0.8341, unweighted: 137.5288, kl: 137.4012, label: 0.1276, prop: 0.0000, label_acc: 0.8961, label_pad_acc: 0.9355, elapsed time: 00:00:00:31
+model_iter971 saved. [total: 0.8050]
+[985/1000] <train> total: 0.8110, unweighted: 135.1783, kl: 135.0544, label: 0.1239, prop: 0.0000, label_acc: 0.8981, label_pad_acc: 0.9367, elapsed time: 00:00:00:31
+[990/1000] <train> total: 0.7980, unweighted: 133.9627, kl: 133.8409, label: 0.1219, prop: 0.0000, label_acc: 0.8988, label_pad_acc: 0.9372, elapsed time: 00:00:00:32
+[995/1000] <train> total: 0.7996, unweighted: 133.9967, kl: 133.8746, label: 0.1221, prop: 0.0000, label_acc: 0.8988, label_pad_acc: 0.9376, elapsed time: 00:00:00:32
+model_iter993 saved. [total: 0.7979]
+[1000/1000] <valid> total: 44.8632, unweighted: 146.5287, kl: 139.0631, label: 7.4656, prop: 0.0000, label_acc: 0.8340, label_pad_acc: 0.9053, elapsed time: 00:00:00:31
+model_iter1000 saved.
+[1000/1000] <train> total: 0.7980, unweighted: 134.9507, kl: 134.8289, label: 0.1218, prop: 0.0000, label_acc: 0.8988, label_pad_acc: 0.9369, elapsed time: 00:00:00:32
+model_iter993 saved. [total: 0.7979]
+---2025-10-21 00:57:20.423890: Training done. (elapsed time: 00:08:20:32)---
+
+---2025-10-21 00:57:25.818333: all process done. (elapsed time: 00:08:21:40)---

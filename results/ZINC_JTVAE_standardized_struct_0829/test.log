@@ -1,0 +1,106 @@
+---2025-09-04 15:26:24.079966: start.---
+GPU [7] is available: True
+
+load: /home/admin/xk/FRATTVAE/results/ZINC_JTVAE_standardized_struct_0829/input_data/params.yml
+data: /home/admin/xk/data/FRATTVAE/ZINC_JTVAE_standardized.csv
+train: 220011, valid: 24445, test: 5000, useChiral: True, n_jobs: 24
+fragments: 33504, feature: 2048, tree: (32, 16), prop: None
+model loaded: /home/admin/xk/FRATTVAE/results/ZINC_JTVAE_standardized_struct_0829/models/model_best.pth
+
+---2025-09-04 15:26:38.774241: Reconstruction start.---
+[TRAIN] data: 220011
+[001/054] label_accuracy: 0.985791, cosine_similarity: 0.998489, elapsed time: 00:00:01:12
+[010/054] label_accuracy: 0.988779, cosine_similarity: 0.998671, elapsed time: 00:00:05:21
+[020/054] label_accuracy: 0.988665, cosine_similarity: 0.998440, elapsed time: 00:00:05:02
+[030/054] label_accuracy: 0.988698, cosine_similarity: 0.998658, elapsed time: 00:00:04:48
+[040/054] label_accuracy: 0.988689, cosine_similarity: 0.998379, elapsed time: 00:00:04:40
+[050/054] label_accuracy: 0.988783, cosine_similarity: 0.998830, elapsed time: 00:00:04:46
+[054/054] label_accuracy: 0.988819, cosine_similarity: 0.999176, elapsed time: 00:00:02:05
+reconstruction-2D rate: 0.923477 (203175/220011)
+reconstruction-3D rate: 0.944030 (121812/129034)
+tanimoto simirality: <mean> 0.967750, <std> 0.105198
+z-latent similarity: <mean> 0.998710, <std> 0.014356
+---2025-09-04 15:55:46.326353: train done. (elapsed time: 00:00:29:07)---
+
+[VALID] data: 24445
+[001/006] label_accuracy: 0.958540, cosine_similarity: 0.978165, elapsed time: 00:00:00:32
+[006/006] label_accuracy: 0.955805, cosine_similarity: 0.976148, elapsed time: 00:00:02:33
+reconstruction-2D rate: 0.785314 (19197/24445)
+reconstruction-3D rate: 0.938755 (11266/12001)
+tanimoto simirality: <mean> 0.881294, <std> 0.244651
+z-latent similarity: <mean> 0.977982, <std> 0.067356
+---2025-09-04 15:58:58.292969: valid done. (elapsed time: 00:00:32:19)---
+
+[TEST] data: 5000
+[001/002] label_accuracy: 0.956077, cosine_similarity: 0.976389, elapsed time: 00:00:00:37
+[002/002] label_accuracy: 0.952817, cosine_similarity: 0.975437, elapsed time: 00:00:00:06
+reconstruction-2D rate: 0.785200 (3926/5000)
+reconstruction-3D rate: 0.934711 (2262/2420)
+tanimoto simirality: <mean> 0.876453, <std> 0.252579
+z-latent similarity: <mean> 0.976217, <std> 0.070433
+---2025-09-04 15:59:43.206503: test done. (elapsed time: 00:00:33:04)---
+
+---2025-09-04 15:59:43.781086: Reconstruction done. (elapsed time: 00:00:33:05)---
+
+---2025-09-04 15:59:43.781176: Generation start.---
+[001/003] cosine_similarity: 0.2609, RMSE: 0.9797, elapsed time: 00:00:00:29
+[003/003] cosine_similarity: 0.2629, RMSE: 0.9790, elapsed time: 00:00:00:42
+z-latent similarity:
+- cosine:  <mean> 0.260801, <std> 0.048534
+- RMSE:  <mean> 0.979903, <std> 0.046055
+[1/5] Average MW: 354.7638, logP: 2.5500, QED: 0.6652, SA: 3.3138, NP: -1.0734, TPSA: 70.7584 (elapsed time: 00:00:11:25)
+
+[001/003] cosine_similarity: 0.2609, RMSE: 0.9802, elapsed time: 00:00:00:52
+[003/003] cosine_similarity: 0.2617, RMSE: 0.9793, elapsed time: 00:00:00:45
+z-latent similarity:
+- cosine:  <mean> 0.261138, <std> 0.048013
+- RMSE:  <mean> 0.979645, <std> 0.045949
+[2/5] Average MW: 354.9140, logP: 2.5621, QED: 0.6661, SA: 3.3149, NP: -1.0633, TPSA: 70.6855 (elapsed time: 00:00:23:24)
+
+[001/003] cosine_similarity: 0.2601, RMSE: 0.9794, elapsed time: 00:00:01:06
+[003/003] cosine_similarity: 0.2596, RMSE: 0.9803, elapsed time: 00:00:00:44
+z-latent similarity:
+- cosine:  <mean> 0.260679, <std> 0.048521
+- RMSE:  <mean> 0.979801, <std> 0.046126
+[3/5] Average MW: 353.6370, logP: 2.5723, QED: 0.6667, SA: 3.2986, NP: -1.0799, TPSA: 70.3071 (elapsed time: 00:00:36:51)
+
+[001/003] cosine_similarity: 0.2613, RMSE: 0.9791, elapsed time: 00:00:01:00
+[003/003] cosine_similarity: 0.2627, RMSE: 0.9796, elapsed time: 00:00:00:47
+z-latent similarity:
+- cosine:  <mean> 0.261230, <std> 0.048241
+- RMSE:  <mean> 0.979551, <std> 0.045657
+[4/5] Average MW: 353.8979, logP: 2.5163, QED: 0.6648, SA: 3.3155, NP: -1.0781, TPSA: 70.7394 (elapsed time: 00:00:49:06)
+
+[001/003] cosine_similarity: 0.2619, RMSE: 0.9779, elapsed time: 00:00:00:55
+[003/003] cosine_similarity: 0.2605, RMSE: 0.9808, elapsed time: 00:00:00:54
+z-latent similarity:
+- cosine:  <mean> 0.261238, <std> 0.048697
+- RMSE:  <mean> 0.978736, <std> 0.046147
+[5/5] Average MW: 354.4865, logP: 2.5639, QED: 0.6674, SA: 3.3200, NP: -1.0801, TPSA: 70.3249 (elapsed time: 00:01:01:21)
+
+moses metrics
+- valid:       <train> 1.0000 (std: 0.0000), <test> 1.0000 (std: 0.0000)
+- unique@10000:<train> 1.0000 (std: 0.0000), <test> 1.0000 (std: 0.0000)
+- FCD/Test:    <train> 1.1908 (std: 0.0240), <test> 1.5906 (std: 0.0265)
+- SNN/Test:    <train> 0.4498 (std: 0.0003), <test> 0.3423 (std: 0.0003)
+- Frag/Test:   <train> 0.9911 (std: 0.0006), <test> 0.9921 (std: 0.0005)
+- Scaf/Test:   <train> 0.4387 (std: 0.0134), <test> 0.2307 (std: 0.0115)
+- FCD/TestSF:  <train> 6.0950 (std: 0.0822), <test> 6.0950 (std: 0.0822)
+- SNN/TestSF:  <train> 0.4166 (std: 0.0004), <test> 0.4166 (std: 0.0004)
+- Frag/TestSF: <train> 0.9783 (std: 0.0006), <test> 0.9783 (std: 0.0006)
+- Scaf/TestSF: <train> 0.1140 (std: 0.0068), <test> 0.1140 (std: 0.0068)
+- IntDiv:      <train> 0.8693 (std: 0.0002), <test> 0.8693 (std: 0.0002)
+- IntDiv2:     <train> 0.8642 (std: 0.0002), <test> 0.8642 (std: 0.0002)
+- Filters:     <train> 0.5558 (std: 0.0030), <test> 0.5558 (std: 0.0030)
+- logP:        <train> 0.2704 (std: 0.0074), <test> 0.2720 (std: 0.0061)
+- SA:          <train> 0.2558 (std: 0.0072), <test> 0.2753 (std: 0.0071)
+- QED:         <train> 0.0652 (std: 0.0009), <test> 0.0651 (std: 0.0009)
+- weight:      <train> 23.6669 (std: 0.4087), <test> 24.0319 (std: 0.3668)
+- NP:          <train> 0.2500 (std: 0.0056), <test> 0.2595 (std: 0.0056)
+- Novelty:     <train> 0.9977 (std: 0.0004), <test> 0.9977 (std: 0.0004)
+- div:         <train> 0.9182 (std: 0.0011), <test> 0.9438 (std: 0.0006)
+- fcd/g:       <train> 0.7705 (std: 0.0036), <test> 0.7257 (std: 0.0041)
+---2025-09-04 17:01:05.037411: Generation done. (elapsed time: 00:01:01:21)---
+
+---2025-09-04 17:01:05.037461: all process done. (elapsed time: 00:01:34:40)---
+

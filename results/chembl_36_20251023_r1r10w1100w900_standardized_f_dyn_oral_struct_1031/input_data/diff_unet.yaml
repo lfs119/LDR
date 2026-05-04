@@ -1,0 +1,23 @@
+trainer_cfg:
+  image size: 16
+  epoch: 1500
+  gradient_accumulation_steps: 1
+  lr: 0.00005
+  lr_warmup_steps: 500
+  save_image_epochs: 10
+  save_model_epochs: 30
+  mixed_precision: "fp16"
+  output_dir: "train_diff_chembl_logs"
+  seed: 0
+  batch_size: 512
+
+
+model_cfg:
+  sample_size: 16
+  in_channels: 1
+  out_channels: 1
+  layers_per_block: 8
+  block_out_channels: [256, 256, 512, 512]
+  down_block_types: ["DownBlock2D", "DownBlock2D", "AttnDownBlock2D", "DownBlock2D", ]
+  up_block_types: ["UpBlock2D", "AttnUpBlock2D", "UpBlock2D", "UpBlock2D", ]
+  vae_path: "/raid/home/xukai/FRATTVAE/results/chembl_36_20251023_r1r10w1100w900_standardized_f_dyn_oral_struct_1031/models/model_best.pth"  # this should be the path to the trained VAE model

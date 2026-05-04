@@ -1,0 +1,10 @@
+{
+  "hERG": 0.3,
+  "AMES": 0.3,
+  "DILI": 0.3,
+  "CYP3A4_Veith": 0.3,
+  "CYP2D6_Veith": 0.3,
+  "HIA_Hou": 0.3,
+  "Caco2_Wang": 0.3,
+  "BBB_Martins": 0.3
+}

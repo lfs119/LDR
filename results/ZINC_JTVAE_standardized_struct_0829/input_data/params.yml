@@ -1,0 +1,35 @@
+# Date of update: 2025-09-04 10:37:24.293244
+result_path: /home/wangqh/xk/FRATTVAE/results/ZINC_JTVAE_standardized_struct_0829
+data_path: /home/wangqh/xk/data/FRATTVAE/ZINC_JTVAE_standardized.csv
+frag_path: /home/wangqh/xk/FRATTVAE/results/ZINC_JTVAE_standardized_struct_0829/input_data/fragments.csv
+seed: 0
+decomp:
+  min_size: 1
+  max_nfrags: 32
+  n_bits: 2048
+  dupl_bits: 0
+  radius: 2
+  max_depth: 32
+  max_degree: 16
+  useChiral: true
+  ignore_double: true
+  ignore_dummy: false
+model:
+  d_model: 512
+  d_ff: 2048
+  nlayer: 6
+  nhead: 8
+  latent: 256
+  feat: 2048
+  property: {}
+  ploss: bce
+  activation: gelu
+  dropout: 0.1
+train:
+  epoch: 1000
+  batch_size: 1024
+  lr: 0.0001
+  kl_w: 0.0005
+  kl_anneal: {}
+  l_w: 2.0
+  p_w: 1.0

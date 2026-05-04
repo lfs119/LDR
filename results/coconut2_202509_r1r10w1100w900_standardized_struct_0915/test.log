@@ -1,0 +1,175 @@
+---2025-10-04 20:23:42.263254: start.---
+GPU [2] is available: True
+
+load: /home/wangqh/xk/FRATTVAE/results/coconut2_202509_r1r10w1100w900_standardized_struct_0915/input_data/params.yml
+data: /home/wangqh/xk/FRATTVAE/data/coconut2_202509_r1r10w1100w900_standardized.csv
+train: 489786, valid: 26923, test: 27436, useChiral: True, n_jobs: 24
+fragments: 248925, feature: 2048, tree: (32, 16), prop: None
+model loaded: /home/wangqh/xk/FRATTVAE/results/coconut2_202509_r1r10w1100w900_standardized_struct_0915/models/model_best.pth
+
+---2025-10-04 20:23:52.036600: Reconstruction start.---
+[TRAIN] data: 489786
+[001/638] label_accuracy: 0.961115, cosine_similarity: 0.988453, elapsed time: 00:00:00:18
+[010/638] label_accuracy: 0.981491, cosine_similarity: 0.995760, elapsed time: 00:00:00:59
+[020/638] label_accuracy: 0.980895, cosine_similarity: 0.994340, elapsed time: 00:00:01:46
+[030/638] label_accuracy: 0.982140, cosine_similarity: 0.996717, elapsed time: 00:00:01:28
+[040/638] label_accuracy: 0.982994, cosine_similarity: 0.996000, elapsed time: 00:00:01:34
+[050/638] label_accuracy: 0.983232, cosine_similarity: 0.997051, elapsed time: 00:00:01:25
+[060/638] label_accuracy: 0.983274, cosine_similarity: 0.989505, elapsed time: 00:00:01:41
+[070/638] label_accuracy: 0.983413, cosine_similarity: 0.995533, elapsed time: 00:00:01:34
+[080/638] label_accuracy: 0.983316, cosine_similarity: 0.998597, elapsed time: 00:00:01:34
+[090/638] label_accuracy: 0.983465, cosine_similarity: 0.994480, elapsed time: 00:00:01:37
+[100/638] label_accuracy: 0.983781, cosine_similarity: 0.998552, elapsed time: 00:00:01:36
+[110/638] label_accuracy: 0.984100, cosine_similarity: 0.997337, elapsed time: 00:00:01:37
+[120/638] label_accuracy: 0.984273, cosine_similarity: 0.996572, elapsed time: 00:00:01:41
+[130/638] label_accuracy: 0.984412, cosine_similarity: 0.998574, elapsed time: 00:00:01:30
+[140/638] label_accuracy: 0.984408, cosine_similarity: 0.994987, elapsed time: 00:00:01:45
+[150/638] label_accuracy: 0.984233, cosine_similarity: 0.995804, elapsed time: 00:00:01:19
+[160/638] label_accuracy: 0.983896, cosine_similarity: 0.997167, elapsed time: 00:00:01:31
+[170/638] label_accuracy: 0.983683, cosine_similarity: 0.994655, elapsed time: 00:00:01:30
+[180/638] label_accuracy: 0.983422, cosine_similarity: 0.993825, elapsed time: 00:00:01:38
+[190/638] label_accuracy: 0.983353, cosine_similarity: 0.994856, elapsed time: 00:00:01:32
+[200/638] label_accuracy: 0.983196, cosine_similarity: 0.994605, elapsed time: 00:00:01:32
+[210/638] label_accuracy: 0.983056, cosine_similarity: 0.995161, elapsed time: 00:00:01:41
+[220/638] label_accuracy: 0.982877, cosine_similarity: 0.995259, elapsed time: 00:00:01:29
+[230/638] label_accuracy: 0.982720, cosine_similarity: 0.995504, elapsed time: 00:00:01:30
+[240/638] label_accuracy: 0.982658, cosine_similarity: 0.997288, elapsed time: 00:00:01:39
+[250/638] label_accuracy: 0.982436, cosine_similarity: 0.995658, elapsed time: 00:00:01:28
+[260/638] label_accuracy: 0.982440, cosine_similarity: 0.997287, elapsed time: 00:00:01:21
+[270/638] label_accuracy: 0.982426, cosine_similarity: 0.995569, elapsed time: 00:00:01:27
+[280/638] label_accuracy: 0.982363, cosine_similarity: 0.994023, elapsed time: 00:00:01:09
+[290/638] label_accuracy: 0.982321, cosine_similarity: 0.996632, elapsed time: 00:00:01:14
+[300/638] label_accuracy: 0.982251, cosine_similarity: 0.993368, elapsed time: 00:00:01:26
+[310/638] label_accuracy: 0.982040, cosine_similarity: 0.994113, elapsed time: 00:00:01:13
+[320/638] label_accuracy: 0.981809, cosine_similarity: 0.994415, elapsed time: 00:00:01:15
+[330/638] label_accuracy: 0.981644, cosine_similarity: 0.993530, elapsed time: 00:00:01:25
+[340/638] label_accuracy: 0.981418, cosine_similarity: 0.995439, elapsed time: 00:00:01:37
+[350/638] label_accuracy: 0.981268, cosine_similarity: 0.994043, elapsed time: 00:00:01:32
+[360/638] label_accuracy: 0.981217, cosine_similarity: 0.995719, elapsed time: 00:00:01:23
+[370/638] label_accuracy: 0.981146, cosine_similarity: 0.994919, elapsed time: 00:00:01:33
+[380/638] label_accuracy: 0.981055, cosine_similarity: 0.998036, elapsed time: 00:00:01:25
+[390/638] label_accuracy: 0.980997, cosine_similarity: 0.994450, elapsed time: 00:00:01:39
+[400/638] label_accuracy: 0.981021, cosine_similarity: 0.996342, elapsed time: 00:00:01:36
+[410/638] label_accuracy: 0.981035, cosine_similarity: 0.993657, elapsed time: 00:00:01:37
+[420/638] label_accuracy: 0.981013, cosine_similarity: 0.994335, elapsed time: 00:00:01:27
+[430/638] label_accuracy: 0.981034, cosine_similarity: 0.995441, elapsed time: 00:00:01:35
+[440/638] label_accuracy: 0.981020, cosine_similarity: 0.994340, elapsed time: 00:00:01:43
+[450/638] label_accuracy: 0.981017, cosine_similarity: 0.994235, elapsed time: 00:00:01:35
+[460/638] label_accuracy: 0.981028, cosine_similarity: 0.996897, elapsed time: 00:00:01:39
+[470/638] label_accuracy: 0.981024, cosine_similarity: 0.996042, elapsed time: 00:00:01:46
+[480/638] label_accuracy: 0.981054, cosine_similarity: 0.993925, elapsed time: 00:00:01:37
+[490/638] label_accuracy: 0.981059, cosine_similarity: 0.996556, elapsed time: 00:00:01:41
+[500/638] label_accuracy: 0.981043, cosine_similarity: 0.996890, elapsed time: 00:00:01:48
+[510/638] label_accuracy: 0.981054, cosine_similarity: 0.993621, elapsed time: 00:00:01:38
+[520/638] label_accuracy: 0.981060, cosine_similarity: 0.993736, elapsed time: 00:00:01:40
+[530/638] label_accuracy: 0.981101, cosine_similarity: 0.994483, elapsed time: 00:00:01:29
+[540/638] label_accuracy: 0.981115, cosine_similarity: 0.994237, elapsed time: 00:00:01:37
+[550/638] label_accuracy: 0.980923, cosine_similarity: 0.984964, elapsed time: 00:00:01:32
+[560/638] label_accuracy: 0.980710, cosine_similarity: 0.996274, elapsed time: 00:00:01:46
+[570/638] label_accuracy: 0.980712, cosine_similarity: 0.996535, elapsed time: 00:00:01:40
+[580/638] label_accuracy: 0.980720, cosine_similarity: 0.995194, elapsed time: 00:00:01:39
+[590/638] label_accuracy: 0.980656, cosine_similarity: 0.996618, elapsed time: 00:00:01:47
+[600/638] label_accuracy: 0.980648, cosine_similarity: 0.994262, elapsed time: 00:00:01:30
+[610/638] label_accuracy: 0.980659, cosine_similarity: 0.996809, elapsed time: 00:00:01:40
+[620/638] label_accuracy: 0.980642, cosine_similarity: 0.994278, elapsed time: 00:00:01:39
+[630/638] label_accuracy: 0.980522, cosine_similarity: 0.990436, elapsed time: 00:00:01:40
+[638/638] label_accuracy: 0.980200, cosine_similarity: 0.991191, elapsed time: 00:00:01:32
+reconstruction-2D rate: 0.900818 (441208/489786)
+reconstruction-3D rate: 0.431316 (145903/338274)
+tanimoto simirality: <mean> 0.899824, <std> 0.139560
+z-latent similarity: <mean> 0.995336, <std> 0.026900
+---2025-10-04 22:07:17.416756: train done. (elapsed time: 00:01:43:25)---
+
+[VALID] data: 26923
+[001/036] label_accuracy: 0.924753, cosine_similarity: 0.891157, elapsed time: 00:00:00:16
+[010/036] label_accuracy: 0.934549, cosine_similarity: 0.916172, elapsed time: 00:00:01:24
+[020/036] label_accuracy: 0.923993, cosine_similarity: 0.881775, elapsed time: 00:00:01:26
+[030/036] label_accuracy: 0.923837, cosine_similarity: 0.923820, elapsed time: 00:00:01:44
+[036/036] label_accuracy: 0.920656, cosine_similarity: 0.936439, elapsed time: 00:00:00:48
+reconstruction-2D rate: 0.605430 (16300/26923)
+reconstruction-3D rate: 0.287867 (3630/12610)
+tanimoto simirality: <mean> 0.721393, <std> 0.302229
+z-latent similarity: <mean> 0.919150, <std> 0.125213
+---2025-10-04 22:13:24.101667: valid done. (elapsed time: 00:01:49:32)---
+
+[TEST] data: 27436
+[001/036] label_accuracy: 0.918207, cosine_similarity: 0.902295, elapsed time: 00:00:00:14
+[010/036] label_accuracy: 0.934547, cosine_similarity: 0.922863, elapsed time: 00:00:01:32
+[020/036] label_accuracy: 0.925130, cosine_similarity: 0.900209, elapsed time: 00:00:01:40
+[030/036] label_accuracy: 0.923903, cosine_similarity: 0.921181, elapsed time: 00:00:01:45
+[036/036] label_accuracy: 0.922400, cosine_similarity: 0.909517, elapsed time: 00:00:00:54
+reconstruction-2D rate: 0.600816 (16484/27436)
+reconstruction-3D rate: 0.295141 (3748/12699)
+tanimoto simirality: <mean> 0.718036, <std> 0.304240
+z-latent similarity: <mean> 0.917998, <std> 0.124587
+---2025-10-04 22:19:52.128864: test done. (elapsed time: 00:01:56:00)---
+
+---2025-10-04 22:19:53.902870: Reconstruction done. (elapsed time: 00:01:56:01)---
+
+---2025-10-04 22:19:53.903052: Generation start.---
+[001/014] cosine_similarity: 0.2597, RMSE: 0.9725, elapsed time: 00:00:00:09
+[010/014] cosine_similarity: 0.2613, RMSE: 0.9737, elapsed time: 00:00:01:18
+[014/014] cosine_similarity: 0.2521, RMSE: 0.9666, elapsed time: 00:00:00:27
+z-latent similarity:
+- cosine:  <mean> 0.261073, <std> 0.054958
+- RMSE:  <mean> 0.971766, <std> 0.045505
+[1/5] Average MW: 436.4092, logP: 3.2386, QED: 0.4390, SA: 4.3641, NP: 1.1761, TPSA: 100.7947, QEPPI: 0.3528, QRCI: 3.4526, SPS: 28.6332, NSPS: 947.8964 (elapsed time: 00:00:25:55)
+
+[001/014] cosine_similarity: 0.2577, RMSE: 0.9750, elapsed time: 00:00:00:14
+[010/014] cosine_similarity: 0.2616, RMSE: 0.9723, elapsed time: 00:00:01:22
+[014/014] cosine_similarity: 0.2672, RMSE: 0.9808, elapsed time: 00:00:00:29
+z-latent similarity:
+- cosine:  <mean> 0.259954, <std> 0.056115
+- RMSE:  <mean> 0.972089, <std> 0.045955
+[2/5] Average MW: 434.0346, logP: 3.1984, QED: 0.4415, SA: 4.3537, NP: 1.2030, TPSA: 100.6348, QEPPI: 0.3474, QRCI: 3.4306, SPS: 28.6635, NSPS: 946.0857 (elapsed time: 00:00:53:23)
+
+[001/014] cosine_similarity: 0.2635, RMSE: 0.9701, elapsed time: 00:00:00:09
+[010/014] cosine_similarity: 0.2573, RMSE: 0.9725, elapsed time: 00:00:01:41
+[014/014] cosine_similarity: 0.2672, RMSE: 0.9456, elapsed time: 00:00:00:25
+z-latent similarity:
+- cosine:  <mean> 0.260781, <std> 0.055768
+- RMSE:  <mean> 0.971510, <std> 0.045337
+[3/5] Average MW: 438.5845, logP: 3.2354, QED: 0.4386, SA: 4.3754, NP: 1.1886, TPSA: 101.7488, QEPPI: 0.3475, QRCI: 3.4547, SPS: 28.8045, NSPS: 960.5698 (elapsed time: 00:01:20:30)
+
+[001/014] cosine_similarity: 0.2624, RMSE: 0.9705, elapsed time: 00:00:00:13
+[010/014] cosine_similarity: 0.2589, RMSE: 0.9723, elapsed time: 00:00:01:22
+[014/014] cosine_similarity: 0.2629, RMSE: 0.9750, elapsed time: 00:00:00:28
+z-latent similarity:
+- cosine:  <mean> 0.259430, <std> 0.056139
+- RMSE:  <mean> 0.972321, <std> 0.045788
+[4/5] Average MW: 433.1351, logP: 3.1995, QED: 0.4397, SA: 4.3471, NP: 1.1813, TPSA: 100.4469, QEPPI: 0.3502, QRCI: 3.4269, SPS: 28.5470, NSPS: 938.8993 (elapsed time: 00:01:47:12)
+
+[001/014] cosine_similarity: 0.2608, RMSE: 0.9720, elapsed time: 00:00:00:08
+[010/014] cosine_similarity: 0.2586, RMSE: 0.9705, elapsed time: 00:00:01:26
+[014/014] cosine_similarity: 0.2618, RMSE: 0.9726, elapsed time: 00:00:00:28
+z-latent similarity:
+- cosine:  <mean> 0.260494, <std> 0.055171
+- RMSE:  <mean> 0.971251, <std> 0.045492
+[5/5] Average MW: 434.3573, logP: 3.2392, QED: 0.4410, SA: 4.3479, NP: 1.1938, TPSA: 100.2791, QEPPI: 0.3525, QRCI: 3.4452, SPS: 28.6428, NSPS: 945.5148 (elapsed time: 00:02:14:57)
+
+moses metrics
+- valid:       <train> 1.0000 (std: 0.0000), <test> 1.0000 (std: 0.0000)
+- unique@10000:<train> 0.9818 (std: 0.0010), <test> 0.9818 (std: 0.0010)
+- FCD/Test:    <train> 1.2540 (std: 0.0213), <test> 1.3136 (std: 0.0208)
+- SNN/Test:    <train> 0.5772 (std: 0.0029), <test> 0.4469 (std: 0.0015)
+- Frag/Test:   <train> 0.0056 (std: 0.0006), <test> 0.0054 (std: 0.0004)
+- Scaf/Test:   <train> 0.4054 (std: 0.0157), <test> 0.4531 (std: 0.0148)
+- FCD/TestSF:  <train> 27.8545 (std: 0.1288), <test> 27.8545 (std: 0.1288)
+- SNN/TestSF:  <train> 0.3127 (std: 0.0005), <test> 0.3127 (std: 0.0005)
+- Frag/TestSF: <train> 0.3494 (std: 0.0017), <test> 0.3494 (std: 0.0017)
+- Scaf/TestSF: <train> 0.9540 (std: 0.0124), <test> 0.9540 (std: 0.0124)
+- IntDiv:      <train> 0.8821 (std: 0.0005), <test> 0.8821 (std: 0.0005)
+- IntDiv2:     <train> 0.8753 (std: 0.0004), <test> 0.8753 (std: 0.0004)
+- Filters:     <train> 0.7107 (std: 0.0029), <test> 0.7107 (std: 0.0029)
+- logP:        <train> 0.2259 (std: 0.0101), <test> 0.2201 (std: 0.0101)
+- SA:          <train> 0.1726 (std: 0.0100), <test> 0.1726 (std: 0.0100)
+- QED:         <train> 0.0364 (std: 0.0011), <test> 0.0335 (std: 0.0011)
+- weight:      <train> 26.3726 (std: 1.4053), <test> 26.1143 (std: 1.3607)
+- NP:          <train> 0.2654 (std: 0.0050), <test> 0.2615 (std: 0.0051)
+- Novelty:     <train> 0.9160 (std: 0.0030), <test> 0.9160 (std: 0.0030)
+- div:         <train> 0.9362 (std: 0.0014), <test> 0.9360 (std: 0.0020)
+- fcd/g:       <train> 0.7603 (std: 0.0035), <test> 0.7533 (std: 0.0034)
+---2025-10-05 00:34:51.635713: Generation done. (elapsed time: 00:02:14:57)---
+
+---2025-10-05 00:34:51.635763: all process done. (elapsed time: 00:04:11:09)---
+

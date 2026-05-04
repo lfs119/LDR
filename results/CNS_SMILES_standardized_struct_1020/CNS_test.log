@@ -1,0 +1,125 @@
+---2025-10-21 00:57:30.749938: start.---
+GPU [2] is available: True
+
+load: /raid/home/xukai/FRATTVAE/results/CNS_SMILES_standardized_struct_1020/input_data/params.yml
+data: /raid/home/xukai/FRATTVAE/data/CNS_SMILES_standardized.csv
+train: 454497, valid: 24925, test: 25431, useChiral: False, n_jobs: 16
+fragments: 7245, feature: 39, tree: (32, 16), prop: None
+model loaded: /raid/home/xukai/FRATTVAE/results/CNS_SMILES_standardized_struct_1020/models/model_best.pth
+
+---2025-10-21 00:57:33.165339: Reconstruction start.---
+[TRAIN] data: 454497
+[001/074] label_accuracy: 0.968235, cosine_similarity: 1.000000, elapsed time: 00:00:01:28
+[010/074] label_accuracy: 0.963379, cosine_similarity: 0.999986, elapsed time: 00:00:10:28
+[020/074] label_accuracy: 0.964559, cosine_similarity: 0.999961, elapsed time: 00:00:12:07
+[030/074] label_accuracy: 0.962819, cosine_similarity: 1.000000, elapsed time: 00:00:13:03
+[040/074] label_accuracy: 0.959198, cosine_similarity: 1.000000, elapsed time: 00:00:11:28
+[050/074] label_accuracy: 0.959089, cosine_similarity: 1.000000, elapsed time: 00:00:09:45
+[060/074] label_accuracy: 0.957920, cosine_similarity: 1.000000, elapsed time: 00:00:10:40
+[070/074] label_accuracy: 0.956665, cosine_similarity: 1.000000, elapsed time: 00:00:09:35
+[074/074] label_accuracy: 0.956634, cosine_similarity: 1.000000, elapsed time: 00:00:02:56
+reconstruction rate: 0.640251 (290992/454497)
+tanimoto simirality: <mean> 0.872573, <std> 0.187212
+z-latent similarity: <mean> 0.999991, <std> 0.001134
+---2025-10-21 02:22:01.442249: train done. (elapsed time: 00:01:24:28)---
+
+[VALID] data: 24925
+[001/005] label_accuracy: 0.931803, cosine_similarity: 0.998413, elapsed time: 00:00:01:01
+[005/005] label_accuracy: 0.906104, cosine_similarity: 0.996371, elapsed time: 00:00:03:04
+reconstruction rate: 0.389930 (9719/24925)
+tanimoto simirality: <mean> 0.754367, <std> 0.230690
+z-latent similarity: <mean> 0.998690, <std> 0.017241
+---2025-10-21 02:26:17.485761: valid done. (elapsed time: 00:01:28:44)---
+
+[TEST] data: 25431
+[001/005] label_accuracy: 0.931288, cosine_similarity: 0.997838, elapsed time: 00:00:01:16
+[005/005] label_accuracy: 0.909596, cosine_similarity: 0.998251, elapsed time: 00:00:03:46
+reconstruction rate: 0.391727 (9962/25431)
+tanimoto simirality: <mean> 0.753488, <std> 0.231844
+z-latent similarity: <mean> 0.998489, <std> 0.017624
+---2025-10-21 02:31:32.244725: test done. (elapsed time: 00:01:33:59)---
+
+---2025-10-21 02:31:33.943142: Reconstruction done. (elapsed time: 00:01:34:00)---
+
+---2025-10-21 02:31:33.943233: Generation start.---
+[001/002] cosine_similarity: 0.2114, RMSE: 1.0346, elapsed time: 00:00:01:14
+[002/002] cosine_similarity: 0.2130, RMSE: 1.0347, elapsed time: 00:00:00:51
+z-latent similarity:
+- cosine:  <mean> 0.212052, <std> 0.055480
+- RMSE:  <mean> 1.034629, <std> 0.051876
+[WARNING] can't calculate fcd score because of [Errno 2] No such file or directory: '/raid/home/xukai/anaconda3/envs/kit25/lib/python3.10/site-packages/fcd/ChemNet_v0.13_pretrained.h5'...
+[WARNING] can't calculate fcd score because of [Errno 2] No such file or directory: '/raid/home/xukai/anaconda3/envs/kit25/lib/python3.10/site-packages/fcd/ChemNet_v0.13_pretrained.h5'...
+[1/5] Average MW: 346.1134, logP: 2.6713, QED: 0.7221, SA: 2.9171, NP: -1.1949, TPSA: 64.8521, QRCI: 2.9004 (elapsed time: 00:00:11:18)
+
+[001/002] cosine_similarity: 0.2116, RMSE: 1.0355, elapsed time: 00:00:01:04
+[002/002] cosine_similarity: 0.2118, RMSE: 1.0343, elapsed time: 00:00:00:43
+z-latent similarity:
+- cosine:  <mean> 0.211660, <std> 0.054995
+- RMSE:  <mean> 1.035007, <std> 0.051994
+[WARNING] can't calculate fcd score because of [Errno 2] No such file or directory: '/raid/home/xukai/anaconda3/envs/kit25/lib/python3.10/site-packages/fcd/ChemNet_v0.13_pretrained.h5'...
+[WARNING] can't calculate fcd score because of [Errno 2] No such file or directory: '/raid/home/xukai/anaconda3/envs/kit25/lib/python3.10/site-packages/fcd/ChemNet_v0.13_pretrained.h5'...
+[2/5] Average MW: 347.0164, logP: 2.6711, QED: 0.7210, SA: 2.9279, NP: -1.1881, TPSA: 65.0564, QRCI: 2.9063 (elapsed time: 00:00:21:58)
+
+[001/002] cosine_similarity: 0.2125, RMSE: 1.0342, elapsed time: 00:00:01:04
+[002/002] cosine_similarity: 0.2120, RMSE: 1.0347, elapsed time: 00:00:00:48
+z-latent similarity:
+- cosine:  <mean> 0.212289, <std> 0.055345
+- RMSE:  <mean> 1.034384, <std> 0.052590
+[WARNING] can't calculate fcd score because of [Errno 2] No such file or directory: '/raid/home/xukai/anaconda3/envs/kit25/lib/python3.10/site-packages/fcd/ChemNet_v0.13_pretrained.h5'...
+[WARNING] can't calculate fcd score because of [Errno 2] No such file or directory: '/raid/home/xukai/anaconda3/envs/kit25/lib/python3.10/site-packages/fcd/ChemNet_v0.13_pretrained.h5'...
+[3/5] Average MW: 346.9314, logP: 2.6675, QED: 0.7218, SA: 2.9223, NP: -1.1880, TPSA: 65.1937, QRCI: 2.8899 (elapsed time: 00:00:31:52)
+
+[001/002] cosine_similarity: 0.2119, RMSE: 1.0345, elapsed time: 00:00:01:16
+[002/002] cosine_similarity: 0.2130, RMSE: 1.0354, elapsed time: 00:00:00:56
+z-latent similarity:
+- cosine:  <mean> 0.212360, <std> 0.055791
+- RMSE:  <mean> 1.034867, <std> 0.052459
+[WARNING] can't calculate fcd score because of [Errno 2] No such file or directory: '/raid/home/xukai/anaconda3/envs/kit25/lib/python3.10/site-packages/fcd/ChemNet_v0.13_pretrained.h5'...
+[WARNING] can't calculate fcd score because of [Errno 2] No such file or directory: '/raid/home/xukai/anaconda3/envs/kit25/lib/python3.10/site-packages/fcd/ChemNet_v0.13_pretrained.h5'...
+[4/5] Average MW: 346.8438, logP: 2.6810, QED: 0.7201, SA: 2.9272, NP: -1.1892, TPSA: 65.3185, QRCI: 2.8954 (elapsed time: 00:00:42:18)
+
+[001/002] cosine_similarity: 0.2118, RMSE: 1.0339, elapsed time: 00:00:01:28
+[002/002] cosine_similarity: 0.2117, RMSE: 1.0352, elapsed time: 00:00:00:49
+z-latent similarity:
+- cosine:  <mean> 0.211772, <std> 0.056110
+- RMSE:  <mean> 1.034396, <std> 0.052855
+[WARNING] can't calculate fcd score because of [Errno 2] No such file or directory: '/raid/home/xukai/anaconda3/envs/kit25/lib/python3.10/site-packages/fcd/ChemNet_v0.13_pretrained.h5'...
+[WARNING] can't calculate fcd score because of [Errno 2] No such file or directory: '/raid/home/xukai/anaconda3/envs/kit25/lib/python3.10/site-packages/fcd/ChemNet_v0.13_pretrained.h5'...
+[5/5] Average MW: 347.0524, logP: 2.6809, QED: 0.7218, SA: 2.9224, NP: -1.2011, TPSA: 65.3388, QRCI: 2.8985 (elapsed time: 00:00:53:16)
+
+
+=== Final Statistics for prop_dict ===
+Metric              Mean      Std       
+MW                   346.7915 ± 71.0218
+NP                   -1.1923 ± 0.6046
+QED                  0.7214 ± 0.1432
+QRCI                 2.8981 ± 0.5929
+SA                   2.9234 ± 0.6522
+TPSA                 65.1519 ± 25.0904
+logP                 2.6743 ± 1.2811
+moses metrics
+- valid:       <train> 1.0000 (std: 0.0000), <test> 1.0000 (std: 0.0000)
+- unique@10000:<train> 0.9991 (std: 0.0001), <test> 0.9991 (std: 0.0001)
+- FCD/Test:    <train> 1.7038 (std: 0.0396), <test> 1.7410 (std: 0.0404)
+- SNN/Test:    <train> 0.5078 (std: 0.0012), <test> 0.4231 (std: 0.0008)
+- Frag/Test:   <train> 0.0209 (std: 0.0005), <test> 0.0207 (std: 0.0004)
+- Scaf/Test:   <train> 0.7703 (std: 0.0085), <test> 0.8238 (std: 0.0072)
+- FCD/TestSF:  <train> 4.8605 (std: 0.0417), <test> 4.8605 (std: 0.0417)
+- SNN/TestSF:  <train> 0.4437 (std: 0.0014), <test> 0.4437 (std: 0.0014)
+- Frag/TestSF: <train> 0.0717 (std: 0.0023), <test> 0.0717 (std: 0.0023)
+- Scaf/TestSF: <train> 0.8504 (std: 0.0239), <test> 0.8504 (std: 0.0239)
+- IntDiv:      <train> 0.8613 (std: 0.0004), <test> 0.8613 (std: 0.0004)
+- IntDiv2:     <train> 0.8560 (std: 0.0004), <test> 0.8560 (std: 0.0004)
+- Filters:     <train> 0.8909 (std: 0.0032), <test> 0.8909 (std: 0.0032)
+- logP:        <train> 0.3154 (std: 0.0068), <test> 0.3145 (std: 0.0068)
+- SA:          <train> 0.1395 (std: 0.0037), <test> 0.1436 (std: 0.0037)
+- QED:         <train> 0.0650 (std: 0.0007), <test> 0.0642 (std: 0.0007)
+- weight:      <train> 25.1345 (std: 0.2204), <test> 25.2356 (std: 0.2195)
+- NP:          <train> 0.3078 (std: 0.0051), <test> 0.3114 (std: 0.0051)
+- Novelty:     <train> 0.9944 (std: 0.0007), <test> 0.9944 (std: 0.0007)
+- div:         <train> 0.8591 (std: 0.0019), <test> 0.8581 (std: 0.0019)
+- fcd/g:       <train> nan (std: nan), <test> nan (std: nan)
+---2025-10-21 03:24:50.365989: Generation done. (elapsed time: 00:00:53:16)---
+
+---2025-10-21 03:24:50.366023: all process done. (elapsed time: 00:02:27:19)---
+

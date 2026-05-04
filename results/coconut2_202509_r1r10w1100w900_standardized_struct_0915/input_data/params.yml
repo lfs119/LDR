@@ -1,0 +1,35 @@
+# Date of update: 2025-09-16 09:47:44.183615
+result_path: /raid/home/xukai/FRATTVAE/results/coconut2_202509_r1r10w1100w900_standardized_struct_0915
+data_path: /raid/home/xukai/FRATTVAE/data/coconut2_202509_r1r10w1100w900_standardized.csv
+frag_path: /raid/home/xukai/FRATTVAE/results/coconut2_202509_r1r10w1100w900_standardized_struct_0915/input_data/fragments.csv
+seed: 0
+decomp:
+  min_size: 1
+  max_nfrags: 32
+  n_bits: 2048
+  dupl_bits: 0
+  radius: 2
+  max_depth: 32
+  max_degree: 16
+  useChiral: true
+  ignore_double: true
+  ignore_dummy: false
+model:
+  d_model: 512
+  d_ff: 2048
+  nlayer: 6
+  nhead: 8
+  latent: 256
+  feat: 2048
+  property: {}
+  ploss: bce
+  activation: gelu
+  dropout: 0.1
+train:
+  epoch: 1000
+  batch_size: 768
+  lr: 0.0001
+  kl_w: 0.0005
+  kl_anneal: {}
+  l_w: 2.0
+  p_w: 1.0

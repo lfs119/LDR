@@ -1,0 +1,301 @@
+date
+date
+loaded: /raid/home/xukai/git_data/FRATTVAE/ZINC_JTVAE_standardized.csv, smiles: 249456
+makedirs: /raid/home/xukai/FRATTVAE/results/ZINC_JTVAE_standardized_struct_0818
+Config is saved to /raid/home/xukai/FRATTVAE/results/ZINC_JTVAE_standardized_struct_0818/input_data/params.yml
+date
+loaded: /raid/home/xukai/git_data/FRATTVAE/ZINC_JTVAE_standardized.csv, smiles: 249456
+date
+loaded: /raid/home/xukai/git_data/FRATTVAE/GuacaMol_standardized.csv, smiles: 1591011
+makedirs: /raid/home/xukai/FRATTVAE/results/GuacaMol_standardized_struct_0818
+Config is saved to /raid/home/xukai/FRATTVAE/results/GuacaMol_standardized_struct_0818/input_data/params.yml
+date
+date
+date
+date
+date
+date
+date
+date
+date
+date
+date
+date
+date
+date
+date
+date
+date
+date
+date
+date
+date
+date
+loaded: /home/wangqh/xk/FRATTVAE/data/coconut2_202509_r1r10w1100w900.csv
+random train-valid-test split. train:valid:test= 0.90:0.05:0.05
+[BEFORE] 544210
+[AFTER] 544145
+removed:  65 (error: 0, dupl: 65, keep_dupls: False)
+No module named 'QEPPI'
+No module named 'QEPPI'
+loaded: /raid/home/xukai/FRATTVAE/data/CNS_SMILES.csv
+No module named 'QEPPI'
+No module named 'QEPPI'
+No module named 'QEPPI'
+No module named 'QEPPI'
+No module named 'QEPPI'
+No module named 'QEPPI'
+No module named 'QEPPI'
+No module named 'QEPPI'
+No module named 'QEPPI'
+No module named 'QEPPI'
+No module named 'QEPPI'
+No module named 'QEPPI'
+No module named 'QEPPI'
+No module named 'QEPPI'
+No module named 'QEPPI'
+No module named 'QEPPI'
+random train-valid-test split. train:valid:test= 0.90:0.05:0.05
+[BEFORE] 504853
+[AFTER] 504853
+removed:  0 (error: 0, dupl: 0, keep_dupls: False)
+loaded: /raid/home/xukai/FRATTVAE/data/chembl_36_20251023_r1r10w1100w900.csv
+random train-valid-test split. train:valid:test= 0.90:0.05:0.05
+[BEFORE] 2590591
+[AFTER] 2510619
+removed:  79972 (error: 0, dupl: 79972, keep_dupls: False)
+loaded: /raid/home/xukai/FRATTVAE/data/chembl_36_20251023_r1r10w1100w900.csv
+random train-valid-test split. train:valid:test= 0.90:0.05:0.05
+[BEFORE] 2590591
+[AFTER] 2510619
+removed:  79972 (error: 0, dupl: 79972, keep_dupls: False)
+smi = COC(O)[C@H]1[C@@H](OC(O)C2CCCCC2)C[C@@H]2CC[C@H]1N2C, smi_std = COC(O)[C@H]1[C@@H](OC(O)C2CCCCC2)C[C@@H]2CC[C@H]1N2C, qed = 0.756840083558848, sa= 5.261368931532977, logp = 1.7177999999999993 
+smi = C[C@@H]1CN(c2cc(-c3n[nH]c4ccc(OC5(C)CC5)cc34)ncn2)C[C@H](C)O1, smi_std = C[C@@H]1CN(c2cc(-c3n[nH]c4ccc(OC5(C)CC5)cc34)ncn2)C[C@H](C)O1, qed = 0.7468766326209479, sa= 3.667179474274503, logp = 3.5648000000000026 
+smi = CC1(C)O[C@@H](O)C2CCC(NC3NCC(C4NNCO4)C(N[C@H](CO)C4CCCCC4)N3)CC21, smi_std = CC1(C)O[C@@H](O)C2CCC(NC3NCC(C4NNCO4)C(N[C@H](CO)C4CCCCC4)N3)CC21, qed = 0.2477917056232887, sa= 5.789092552391619, logp = -0.15439999999999499 
+loaded: /raid/home/xukai/git_data/FRATTVAE/MOSES_standardized.csv
+[BEFORE] 1936962
+[AFTER] 1936962
+removed:  0 (error: 0, dupl: 0, keep_dupls: False)
+smi = COC(O)[C@H]1[C@@H](OC(O)C2CCCCC2)C[C@@H]2CC[C@H]1N2C, smi_std = COC(O)[C@H]1[C@@H](OC(O)C2CCCCC2)C[C@@H]2CC[C@H]1N2C, qed = 0.756840083558848, sa= 5.261368931532977, logp = 1.7177999999999993 
+smi = C[C@@H]1CN(c2cc(-c3n[nH]c4ccc(OC5(C)CC5)cc34)ncn2)C[C@H](C)O1, smi_std = C[C@@H]1CN(c2cc(-c3n[nH]c4ccc(OC5(C)CC5)cc34)ncn2)C[C@H](C)O1, qed = 0.7468766326209479, sa= 3.667179474274503, logp = 3.5648000000000026 
+smi = CC1(C)O[C@@H](O)C2CCC(NC3NCC(C4NNCO4)C(N[C@H](CO)C4CCCCC4)N3)CC21, smi_std = CC1(C)O[C@@H](O)C2CCC(NC3NCC(C4NNCO4)C(N[C@H](CO)C4CCCCC4)N3)CC21, qed = 0.2477917056232887, sa= 5.789092552391619, logp = -0.15439999999999499 
+loaded: /raid/home/xukai/git_data/FRATTVAE/SuparNatural_over500_standardized.csv
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none

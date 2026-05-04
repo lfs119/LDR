@@ -31,6 +31,7 @@ sh enviroment.sh
 pip install QEPPIcommunity
 pip install qrci
 pip install meeko
+pip install fcd-torch    diffusers
 ```
 If you use Docker, you can use the Dockerfile to build your environment.
 ```
